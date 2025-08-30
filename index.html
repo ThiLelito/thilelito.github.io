@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,36 @@
 	<link rel="shortcut icon" href="site-icon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./assets/css/styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.x.x/css/all.css" crossorigin="anonymous"></head>
 <body>
 	<header class="header">
 		<i id="toggleTheme" class="bi bi-sun"></i>
+		<nav class="header_nav">
+			<ul class="menu menu_principal">
+				<li class="menu_item active">
+					<a class="menu_link" href="#home">
+						<span class="menu_text">HOME</span>
+					</a>
+				</li>
+				<li class="menu_item">
+					<a class="menu_link" href="#projetos">
+						<span class="menu_text">PROJETOS</span>
+					</a>
+				</li>
+				<li class="menu_item">
+					<a class="menu_link" href="#sobre">
+						<span class="menu_text">SOBRE</span>
+					</a>
+				</li>
+				<li class="menu_item">
+					<a class="menu_link" href="#contato">
+						<span class="menu_text">CONTATO</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-	<nav>
+	<nav class="nav_mobile">
 		<ul class="menu menu_mobile">
 			<li class="menu_item active">
 				<a class="menu_link" href="#home">
@@ -37,5 +61,34 @@
 			</li>
 		</ul>
 	</nav>
+	<main>
+		<div class="main_content">
+			<h1>Desenvolvendo a sua próxima história.</h1>
+			<p>Sou Thiago Lelles Fernandes, um aspirante a desenvolvedor de jogos digitais. Busco produzir e publicar novas experiências.</p>
+		</div>
+		<ul class="menu menu-social">
+			<li>
+				<a class="menu_link" href="">
+					<img src="./assets/images/Itch Io.svg" alt="" class="menu_icon">
+				</a>
+			</li>
+			<li>
+				<a class="menu_link" href="">
+					<i class="bi bi-github menu_icon"></i>
+				</a>
+			</li>
+			<li>
+				<a class="menu_link" href="">
+					<i class="bi bi-linkedin menu_icon"></i>
+				</a>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<p>
+			© 2025. Todos os Direitos Reservados. Thiago Lelles Fernandes. Desenvolvido por <a href="https://github.com/thilelito">Thiago Lelles Fernandes</a>.
+		</p>
+	</footer>
+	<script src="./assets/js/scripts.js"></script>
 </body>
 </html>
