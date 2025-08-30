@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+	--primary-color: #FFF;
+	--primary-bg-color: #000;
+	--primary-itch-button-bg: #FF9797;
+	--primary-menu-color: #000;
+	--primary-menu-bg-color: #FFF;
+	
+	--secondary-color: #000;
+	--secondary-bg-color: #FFF;
+	--secondary-itch-button-bg: #C74D4D;
+	--secondary-menu-color: #FFF;
+	--secondary-menu-bg-color: #000;
+	
+	--itch-button-text: #FFFFFF;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	list-style: none;
+}
+
+body {
+	background: var(--primary-bg-color);
+	font-family: 'Ubuntu Sans Mono', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	color: var(--primary-color);
+}
+
+.header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1rem;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 3.25rem;
+}
+
+#toggleTheme {
+	font-size: 1.5rem;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.menu_item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu_mobile {
+	justify-content: space-between;
+	width: 100vw;
+	position: fixed;
+	bottom: 0;
+	background: var(--primary-menu-bg-color);
+	height: 64px;
+}
+
+.menu_link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu_link i {
+	color: var(--primary-menu-color);
+	font-size: 1.5rem;
+}
+
+.active {
+	border: 0px;
+	border-bottom: 2px;
+	border-color: var(--primary-menu-color);
+	border-style: solid;
+}
+
+@media (min-width: 768px) {
+	.menu_mobile {
+		display: none;
+	}
+}
